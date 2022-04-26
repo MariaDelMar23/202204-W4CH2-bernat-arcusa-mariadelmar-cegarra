@@ -5,18 +5,50 @@ import Result from "./components/Result/Result";
 import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
-  const abecedario = ["A", "B", "C", "D", "E"];
+
   const word = "PATATA";
+
+  const alphabet = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "Ñ",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+  const usedLettersList = [];
+
   return (
     <>
       <div className="container">
         <div className="main-container">
-          <UsedLetters />
+          <UsedLetters usedLettersList={usedLettersList} />
           <Hangman />
         </div>
         <GuessLetters word={word} letter={"A"} />
         <Result resultText="You're dead!" />
-        <Letters abecedario={abecedario} />
+        <Letters alphabet={alphabet} />
       </div>
     </>
   );

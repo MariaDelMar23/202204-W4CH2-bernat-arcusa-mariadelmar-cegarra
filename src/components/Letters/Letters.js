@@ -1,11 +1,11 @@
 import "./Letters.css";
 
-const Letters = ({ abecedario, clickLetter }) => {
+const Letters = ({ alphabet, clickLetter }) => {
   return (
     <ul className="letters">
-      {abecedario.map((letra) => (
-        <li className="letter" key={letra} onClick={clickLetter}>
-          <a href="a">{letra}</a>
+      {alphabet.map((letter) => (
+        <li className="letter" key={letter} onClick={clickLetter}>
+          <a href={letter}>{letter}</a>
         </li>
       ))}
     </ul>
