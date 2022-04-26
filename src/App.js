@@ -5,6 +5,9 @@ import Result from "./components/Result/Result";
 import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
+
+  const word = "PATATA";
+
   const alphabet = [
     "A",
     "B",
@@ -43,7 +46,7 @@ function App() {
           <UsedLetters usedLettersList={usedLettersList} />
           <Hangman />
         </div>
-        <GuessLetters />
+        <GuessLetters word={word} letter={"A"} />
         <Result resultText="You're dead!" />
         <Letters alphabet={alphabet} />
       </div>
