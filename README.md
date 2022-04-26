@@ -18,6 +18,7 @@ Incluye Husky con los tres hooks y también el workflow Audit.
 
 - CONTIENE el estado del juego
 - CONTIENE una lista de letras acertadas
+- CONTIENE una función que devuelve una palabra aleatoria proviniente de una lista de palabras
 - RENDERIZA el componente GuessLetters con el texto de la palabra a adivinar
 - RENDERIZA el componente Result con el texto del estado del juego
 - RENDERIZA el componente Letters
