@@ -5,6 +5,7 @@ import Result from "./components/Result/Result";
 import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
+  const abecedario = ["A", "B", "C", "D", "E"];
   return (
     <>
       <div className="container">
@@ -14,7 +15,7 @@ function App() {
         </div>
         <GuessLetters />
         <Result resultText="You're dead!" />
-        <Letters />
+        <Letters abecedario={abecedario} />
       </div>
     </>
   );
