@@ -4,7 +4,7 @@ const Letters = ({ abecedario, clickLetter }) => {
   return (
     <ul className="letters">
       {abecedario.map((letra) => (
-        <li className="letter" onClick={clickLetter}>
+        <li className="letter" key={letra} onClick={clickLetter}>
           <a href="a">{letra}</a>
         </li>
       ))}
