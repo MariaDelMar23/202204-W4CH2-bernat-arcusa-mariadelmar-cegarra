@@ -6,7 +6,7 @@ import UsedLetters from "./components/UsedLetters/UsedLetters";
 
 function App() {
 
-  const word = "PATATA";
+  const word = "PEDO";
 
   const alphabet = [
     "A",
@@ -23,7 +23,6 @@ function App() {
     "L",
     "M",
     "N",
-    "Ñ",
     "O",
     "P",
     "Q",
