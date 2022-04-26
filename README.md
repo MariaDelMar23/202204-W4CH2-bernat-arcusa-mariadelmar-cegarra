@@ -11,3 +11,34 @@ En el componente UsedLetters tienen que ir apareciendo las letras que ya se han 
 En el componente Result no aparecerá nada hasta el final de la partida. Si el usuario ha ganado, tendrá el texto "You're alive!", y si pierde tendrá el texto "You're dead!".
 
 Incluye Husky con los tres hooks y también el workflow Audit.
+
+## Listado de componentes
+
+### App
+
+- CONTIENE el estado del juego
+- CONTIENE una lista de letras acertadas
+- RENDERIZA el componente GuessLetters con el texto de la palabra a adivinar
+- RENDERIZA el componente Result con el texto del estado del juego
+- RENDERIZA el componente Letters
+
+### Letters
+
+- RENDERIZA la lista de letras del abecedario
+
+### GuessLetters
+
+- RENDERIZA la lista de letras de la palabra recibida
+
+### UsedLetters
+
+- RENDERIZA el texto "Used letters"
+- RENDERIZA tantas letras usadas como RECIBA
+
+### Result
+
+- RENDERIZA un texto recibido.
+
+### Hangman
+
+- RENDERIZA un listado de lineas.
